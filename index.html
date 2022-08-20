@@ -476,34 +476,62 @@
         </button>
         <p class="modal-title">Оставьте свои данные, мы Вам перезвоним</p>
         <form class="modal-form">
-          <input
-            type="text"
-            class="form-input"
-            name="user-name"
-            placeholder="Имя"
-            required
-          />
-          <input
-            type="tel"
-            class="form-input"
-            name="user-tel"
-            placeholder="Телефон"
-            required
-            minlength="10"
-            maxlength="13"
-          />
-          <input
-            type="email"
-            class="form-input"
-            name="user-mail"
-            placeholder="Почта"
-          />
-          <input
-            type="text"
-            class="form-input"
-            name="comment"
-            placeholder="Комментарий"
-          />
+          <div class="input-field">
+            <label
+              ><span class="input-title">Имя</span>
+              <input
+                type="text"
+                class="form-input"
+                name="user-name"
+                placeholder=""
+                required
+              />
+              <svg class="input-icon" wight="12" height="12">
+                <use href=".//images/icons.svg.svg#icon-person"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="input-field">
+            <label
+              ><span class="input-title">Телефон</span>
+              <input
+                type="tel"
+                class="form-input"
+                name="user-tel"
+                placeholder=" "
+                required
+                minlength="10"
+                maxlength="13"
+              />
+
+              <svg class="input-icon" wight="13" height="13">
+                <use href=".//images/icons.svg.svg#icon-phone"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="input-field">
+            <label
+              ><span class="input-title">Почта</span>
+              <input
+                type="email"
+                class="form-input"
+                name="user-mail"
+                placeholder=" "
+              />
+              <svg class="input-icon" wight="15" height="12">
+                <use href=".//images/icons.svg.svg#icon-email"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="input-field">
+            <label for="user-comment" class="input-title">Комментарий</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="modal-text"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
           <button type="submit">Отправить</button>
         </form>
       </div>
