@@ -811,6 +811,7 @@ button {
   height: 50px;
 
   justify-content: center;
+  align-items: center;
   border: none;
   color: var(--primary-white-color);
   transition: background-color var(--main-transition),
