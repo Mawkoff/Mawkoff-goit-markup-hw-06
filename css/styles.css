@@ -767,6 +767,11 @@ button {
     box-shadow var(--main-transition);
   cursor: pointer;
 }
+
+.footer-wrap:hover {
+  border-color: var(--second-title-color);
+}
+
 .footer-input {
   gap: 10px;
   font-weight: 400;
